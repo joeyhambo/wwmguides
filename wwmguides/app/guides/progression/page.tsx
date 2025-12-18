@@ -42,13 +42,9 @@ export default function ProgressionGuidePage() {
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
               src="https://player.bilibili.com/player.html?bvid=BV1DcCqBbEHb&page=1&high_quality=1&danmaku=0"
-              scrolling="no"
-              border="0"
-              frameBorder="no"
-              framespacing="0"
-              allowFullScreen={true}
+              allowFullScreen
               className="absolute top-0 left-0 w-full h-full rounded-lg"
-              style={{ border: 'none' }}
+              style={{ border: 'none', overflow: 'hidden' }}
             ></iframe>
           </div>
 
