@@ -1,7 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [currentVideo, setCurrentVideo] = useState(0);
+  const videos = [
+    { src: "/videos/index1.mp4", title: "Video 1" },
+    { src: "/videos/index2.mp4", title: "Video 2" }
+  ];
+
+  const nextVideo = () => {
+    setCurrentVideo((prev) => (prev + 1) % videos.length);
+  };
+
   return (
     <div className="bg-slate-800 relative">
       {/* Hero Banner Section */}
@@ -54,49 +67,40 @@ export default function Home() {
       {/* Content Modules */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 z-10">
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Module 1: Game Guides - Wide Card */}
-          <div className="font-cinzel bg-slate-700 border border-slate-600 rounded-lg p-6 hover:border-gold transition relative group">
-            <div className="flex gap-6 h-full">
-              {/* Left side - Main content */}
-              <div className="flex-1 flex flex-col">
-                <div className="text-4xl mb-4">⚔️</div>
-                <h3 className="font-cinzel text-2xl font-bold mb-3 text-white">
-                  Game Guides
-                </h3>
-                <p className="font-cinzel text-gray-400 mb-4">
-                  Complete walkthroughs, combat tips, character builds, and strategies to master the game.
-                </p>
-                <ul className="font-cinzel text-sm text-gray-500 space-y-1 mb-4">
-                  <li>• Beginner Guide</li>
-                  <li>• Combat System</li>
-                  <li>• Weapon Mastery</li>
-                  <li>• Skills & Abilities</li>
-                </ul>
-                <Link href="/guides" className="font-cinzel mt-auto text-gray-300 text-sm font-medium hover:text-gold transition">
-                  Read More →
-                </Link>
-              </div>
+          {/* Module 1: Game Guides - Video Card */}
+          <div className="font-cinzel bg-slate-700 border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition relative group flex flex-col">
+            {/* Video Section */}
+            <div className="relative flex-1 bg-black">
+              <video
+                key={videos[currentVideo].src}
+                controls
+                className="w-full h-full object-cover"
+                poster="/images/indexbanner1.png"
+              >
+                <source src={videos[currentVideo].src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
 
-              {/* Right side - Two small cards */}
-              <div className="flex-1 flex flex-col gap-4">
-                {/* First card */}
-                <Link href="/guides/beginner" className="font-cinzel group flex-1 bg-slate-800 border border-slate-600 rounded-lg p-4 hover:border-gold transition flex flex-col">
-                  <h4 className="font-cinzel text-base font-bold mb-2 text-white group-hover:text-gold transition">Complete Beginner Guide</h4>
-                  <p className="font-cinzel text-gray-400 text-xs mb-2 flex-1">
-                    Everything you need to know to start your journey in Where Winds Meet.
-                  </p>
-                  <span className="font-cinzel text-gray-300 text-xs font-medium group-hover:text-gold transition">Read Guide →</span>
-                </Link>
+              {/* Next Video Button */}
+              <button
+                onClick={nextVideo}
+                className="absolute top-4 right-4 bg-black/60 hover:bg-black/80 text-white px-3 py-1.5 rounded text-xs font-medium transition backdrop-blur-sm border border-white/20 hover:border-gold"
+              >
+                Next Video ({currentVideo + 1}/{videos.length})
+              </button>
+            </div>
 
-                {/* Second card */}
-                <Link href="/guides/combat" className="font-cinzel group flex-1 bg-slate-800 border border-slate-600 rounded-lg p-4 hover:border-gold transition flex flex-col">
-                  <h4 className="font-cinzel text-base font-bold mb-2 text-white group-hover:text-gold transition">Combat System</h4>
-                  <p className="font-cinzel text-gray-400 text-xs mb-2 flex-1">
-                    Master the intricate combat mechanics and fighting techniques.
-                  </p>
-                  <span className="font-cinzel text-gray-300 text-xs font-medium group-hover:text-gold transition">Read Guide →</span>
-                </Link>
-              </div>
+            {/* Text Content Below Video */}
+            <div className="p-3">
+              <h3 className="font-cinzel text-lg font-bold mb-1 text-white">
+                Fun Moments
+              </h3>
+              <p className="font-cinzel text-gray-400 text-xs mb-1">
+                Fun clips from the world of Yan Yun
+              </p>
+              <Link href="/guides" className="font-cinzel text-gray-300 text-xs font-medium hover:text-gold transition inline-block">
+                Watch More →
+              </Link>
             </div>
           </div>
 
