@@ -1,10 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cinzel, Crimson_Text } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ['400', '500', '600', '700', '800', '900'],
+  variable: '--font-cinzel'
+});
+const crimsonText = Crimson_Text({
+  subsets: ["latin"],
+  weight: ['400', '600', '700'],
+  variable: '--font-crimson'
+});
 
 export const metadata: Metadata = {
   title: "Where Winds Meet Guides - Complete Game Guides & Tips",
@@ -32,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${crimsonText.className} ${cinzel.variable} ${crimsonText.variable}`}>
         <Header />
         <main className="min-h-screen">
           {children}

@@ -12,7 +12,7 @@ export default function MeaningOfWWM() {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Breadcrumb */}
-      <nav className="text-sm text-gray-400 mb-6">
+      <nav className="font-cinzel text-sm text-gray-400 mb-6">
         <Link href="/" className="hover:text-gold transition">Home</Link>
         {" > "}
         <Link href="/world" className="hover:text-gold transition">World of Yan Yun</Link>
@@ -22,7 +22,7 @@ export default function MeaningOfWWM() {
 
       {/* Header */}
       <header className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+        <h1 className="font-cinzel text-4xl md:text-5xl font-bold mb-4 text-white">
           The Meaning of Where Winds Meet
         </h1>
         <p className="text-xl text-gray-300 mb-6">
@@ -75,7 +75,7 @@ export default function MeaningOfWWM() {
 
       {/* Part 1: 燕云十六州 */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-white border-b border-slate-600 pb-3">
+        <h2 className="font-cinzel text-3xl font-bold mb-6 text-white border-b border-slate-600 pb-3">
           Part 1. 【燕云十六州】
         </h2>
 
@@ -122,7 +122,7 @@ export default function MeaningOfWWM() {
 
       {/* Part 2: 十六声 */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-white border-b border-slate-600 pb-3">
+        <h2 className="font-cinzel text-3xl font-bold mb-6 text-white border-b border-slate-600 pb-3">
           Part 2. 【十六声】
         </h2>
 
@@ -155,7 +155,7 @@ export default function MeaningOfWWM() {
 
       {/* Part 3: Where Winds Meet */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-white border-b border-slate-600 pb-3">
+        <h2 className="font-cinzel text-3xl font-bold mb-6 text-white border-b border-slate-600 pb-3">
           Part 3. 【Where Winds Meet】
         </h2>
 
@@ -184,7 +184,7 @@ export default function MeaningOfWWM() {
 
       {/* Chinese Character Learning Section */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold mb-6 text-white border-b border-slate-600 pb-3">
+        <h2 className="font-cinzel text-3xl font-bold mb-6 text-white border-b border-slate-600 pb-3">
           Chinese Character Evolution
         </h2>
 
@@ -195,7 +195,7 @@ export default function MeaningOfWWM() {
 
           {/* 燕 Character */}
           <div className="bg-slate-700 border border-slate-600 rounded-lg p-6">
-            <h3 className="text-2xl font-bold mb-4 text-white">燕 (Yàn) - Swallow</h3>
+            <h3 className="font-cinzel text-2xl font-bold mb-4 text-white">燕 (Yàn) - Swallow</h3>
 
             <div className="my-4 rounded-lg overflow-hidden border border-slate-600">
               <Image
@@ -218,7 +218,7 @@ export default function MeaningOfWWM() {
 
           {/* 云 Character */}
           <div className="bg-slate-700 border border-slate-600 rounded-lg p-6">
-            <h3 className="text-2xl font-bold mb-4 text-white">云 (Yún) - Cloud</h3>
+            <h3 className="font-cinzel text-2xl font-bold mb-4 text-white">云 (Yún) - Cloud</h3>
 
             <div className="my-4 rounded-lg overflow-hidden border border-slate-600">
               <Image
@@ -241,7 +241,7 @@ export default function MeaningOfWWM() {
 
           {/* 州 Character */}
           <div className="bg-slate-700 border border-slate-600 rounded-lg p-6">
-            <h3 className="text-2xl font-bold mb-4 text-white">州 (Zhōu) - Prefecture/State</h3>
+            <h3 className="font-cinzel text-2xl font-bold mb-4 text-white">州 (Zhōu) - Prefecture/State</h3>
 
             <div className="my-4 rounded-lg overflow-hidden border border-slate-600">
               <Image
@@ -260,7 +260,7 @@ export default function MeaningOfWWM() {
 
           {/* Numbers */}
           <div className="bg-slate-700 border border-slate-600 rounded-lg p-6">
-            <h3 className="text-2xl font-bold mb-4 text-white">十六 (Shí Liù) - Sixteen</h3>
+            <h3 className="font-cinzel text-2xl font-bold mb-4 text-white">十六 (Shí Liù) - Sixteen</h3>
 
             <p>
               What is "十六 shí liù"? "十" (ten), "六" (six). Put together, they mean "sixteen".

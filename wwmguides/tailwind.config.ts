@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         gold: '#DBC391',
       },
+      fontFamily: {
+        cinzel: ['var(--font-cinzel)', 'serif'],
+        crimson: ['var(--font-crimson)', 'Georgia', 'serif'],
+      },
     },
   },
   plugins: [],
