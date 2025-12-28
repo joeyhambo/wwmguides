@@ -19,8 +19,8 @@ body {
   position: relative;
 }
 
-/* Rain effect - static golden rain lines */
-body::before {
+/* Rain effect - static golden rain lines - only on homepage */
+body.homepage::before {
   content: '';
   position: fixed;
   top: 0;
@@ -34,8 +34,8 @@ body::before {
       110deg,
       transparent,
       transparent 30px,
-      rgba(219, 195, 145, 0.85) 30px,
-      rgba(219, 195, 145, 0.85) 34px,
+      rgba(219, 195, 145, 0.04) 30px,
+      rgba(219, 195, 145, 0.04) 34px,
       transparent 34px,
       transparent 100px
     ),
@@ -43,8 +43,8 @@ body::before {
       110deg,
       transparent,
       transparent 45px,
-      rgba(219, 195, 145, 0.7) 45px,
-      rgba(219, 195, 145, 0.7) 48px,
+      rgba(219, 195, 145, 0.03) 45px,
+      rgba(219, 195, 145, 0.03) 48px,
       transparent 48px,
       transparent 120px
     ),
@@ -52,8 +52,8 @@ body::before {
       110deg,
       transparent,
       transparent 60px,
-      rgba(219, 195, 145, 0.6) 60px,
-      rgba(219, 195, 145, 0.6) 63px,
+      rgba(219, 195, 145, 0.02) 60px,
+      rgba(219, 195, 145, 0.02) 63px,
       transparent 63px,
       transparent 140px
     );

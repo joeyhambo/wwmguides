@@ -12,7 +12,22 @@ const cultureArticles = [
     category: "World & Terms",
     difficulty: "Cultural Deep Dive",
   },
+  // Life & Culture
+  {
+    title: "Why is the character for 'martial art' made up of the two components 'stop' and 'halberd'?",
+    description: "Explore the deep philosophical meaning behind 止戈为武 (to stop the blade is true martial virtue) through Big Zhao's memorable question.",
+    href: "/world/stop-and-halberd",
+    category: "Life & Culture",
+    difficulty: "Philosophy",
+  },
   // Story & Lore
+  {
+    title: "Her Jianghu is too short but so bright",
+    description: "A touching story about Ruby's brave sacrifice during the Burning Blissful Retreat, showing how even the briefest flame can shine brightest.",
+    href: "/world/her-jianghu",
+    category: "Story & Lore",
+    difficulty: "Story Analysis",
+  },
   {
     title: "The Meaning of the Player Turning into a Horse in the Final Chapter of Qinghe",
     description: "An in-depth analysis of the symbolic significance of the player's transformation into a horse in Qinghe's final chapter.",
@@ -35,7 +50,7 @@ export default function WorldPage() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">World of Yan Yun</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">World of Where Winds Meet</h1>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
           Discover the rich world of Where Winds Meet. Explore factions, regions, characters, and the historical events that shaped Yan Yun.
         </p>

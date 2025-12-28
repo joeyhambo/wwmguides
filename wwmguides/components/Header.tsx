@@ -12,13 +12,13 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-cinzel text-2xl font-bold text-white">Where Winds Meet Guides</span>
+            <span className="font-cinzel text-2xl font-bold text-white">Where Winds Meet Wander</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/guides" className="font-cinzel text-white hover:text-gold font-medium transition">
-              Guides
+            <Link href="/gallery" className="font-cinzel text-white hover:text-gold font-medium transition">
+              Gallery
             </Link>
             <Link href="/culture" className="font-cinzel text-white hover:text-gold font-medium transition">
               Culture
@@ -50,11 +50,11 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden pb-4 space-y-2">
             <Link
-              href="/guides"
+              href="/gallery"
               className="font-cinzel block px-4 py-2 text-white hover:bg-gray-800 hover:text-gold rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Guides
+              Gallery
             </Link>
             <Link
               href="/culture"

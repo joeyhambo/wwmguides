@@ -289,6 +289,29 @@ export default function MeaningOfWWM() {
           Congratulations! Now you could decode this string of square characters: "燕云十六州"
         </p>
       </section>
+
+      {/* Back Navigation */}
+      <div className="mt-16 pt-8 border-t border-slate-700">
+        <Link
+          href="/world"
+          className="inline-flex items-center text-gray-400 hover:text-gold transition-colors"
+        >
+          <svg
+            className="w-5 h-5 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Back to World of Where Winds Meet
+        </Link>
+      </div>
     </article>
   );
 }

@@ -7,7 +7,23 @@
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(dir:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(if [ -d \"public\" ])",
+      "Bash(then ls -la public)",
+      "Bash(else echo \"public 目录不存在\")",
+      "Bash(fi)",
+      "Bash(git lfs:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(if [ -d \"wwmguides/public/images\" ])",
+      "Bash(then ls wwmguides/public/images)",
+      "Bash(else echo \"Directory not found\")",
+      "Bash(cat:*)",
+      "Bash(taskkill:*)",
+      "Bash(ls -la \"e:\\\\Works\\\\wwm\\\\wwmguides\\\\app\\\\world\"\" 2>/dev/null || echo \"Directory structure not found, exploring further \")"
     ]
   }
 }
