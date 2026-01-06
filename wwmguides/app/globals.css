@@ -79,6 +79,12 @@ body > *:not(#rainCanvas) {
   z-index: 10;
 }
 
+/* Ensure all links are clickable */
+a {
+  position: relative;
+  z-index: 20;
+}
+
 main {
   background: transparent !important;
 }

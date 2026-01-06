@@ -1,7 +1,8 @@
 'use client';
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 // Define image structure with category
 interface GalleryImage {
@@ -42,8 +43,17 @@ const galleryImages: GalleryImage[] = [
 const categories = ["All Pictures", "Profile", "Landscapes", "Portraits", "Moments"];
 
 export default function GalleryPage() {
+  const searchParams = useSearchParams();
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [selectedCategory, setSelectedCategory] = useState("All Pictures");
+
+  // Get category from URL parameter
+  useEffect(() => {
+    const categoryParam = searchParams.get('category');
+    if (categoryParam && categories.includes(categoryParam)) {
+      setSelectedCategory(categoryParam);
+    }
+  }, [searchParams]);
 
   // Filter images based on selected category
   const filteredImages = selectedCategory === "All Pictures"

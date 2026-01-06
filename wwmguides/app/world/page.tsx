@@ -22,6 +22,13 @@ const cultureArticles = [
   },
   // Story & Lore
   {
+    title: "The Story of BaWu - Priceless but also worthless",
+    description: "Discover the tragic tale of Bawu, the boy blessed by the Deer Goddess, who mastered the Gu craft and the Longevity Parasite.",
+    href: "/world/story-of-bawu",
+    category: "Story & Lore",
+    difficulty: "Story Analysis",
+  },
+  {
     title: "Her Jianghu is too short but so bright",
     description: "A touching story about Ruby's brave sacrifice during the Burning Blissful Retreat, showing how even the briefest flame can shine brightest.",
     href: "/world/her-jianghu",

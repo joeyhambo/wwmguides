@@ -4,6 +4,14 @@ import Link from "next/link";
 import { useState } from "react";
 
 const cultureArticles = [
+  // Life & Culture
+  {
+    title: "The Sundial and the Twelve-Shichen Timekeeping System",
+    description: "Discover the ancient Chinese sundial and Twelve-Shichen timekeeping system used in WWM, exploring traditional Chinese time measurement.",
+    href: "/culture/sundial-timekeeping",
+    category: "Life & Culture",
+    difficulty: "Cultural Deep Dive",
+  },
   // Story & Lore
   {
     title: "The Meaning of the Player Turning into a Horse in the Final Chapter of Qinghe",

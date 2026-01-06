@@ -73,7 +73,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
             <div className="flex flex-wrap justify-start gap-8 pl-12">
               <Link
-                href="/gallery/beginner"
+                href="/journey"
                 className="group font-cinzel bg-black/40 backdrop-blur-sm text-gold border border-gold font-bold hover:bg-gold/10 hover:shadow-[0_0_20px_rgba(212,175,55,0.6)] hover:scale-105 hover:text-white transition-all duration-300 flex items-center gap-6"
                 style={{ padding: '16px 36px', borderRadius: '30px 3px 30px 3px' }}
               >
@@ -82,9 +82,11 @@ export default function Home() {
               </Link>
               <Link
                 href="/gallery"
-                className="font-cinzel border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:border-gold hover:text-gold transition backdrop-blur-sm bg-black/30"
+                className="group font-cinzel text-gray-200 hover:text-gold transition-all duration-300 relative px-8 py-3 inline-block"
+                style={{ fontSize: '25px', fontWeight: '400', letterSpacing: '0.05em' }}
               >
-                Browse All Gallery
+                <span className="relative z-10">Browse All Gallery</span>
+                <span className="absolute bottom-2 left-1/2 -translate-x-1/2 h-[1px] w-0 group-hover:w-full bg-gradient-to-r from-transparent via-gold to-transparent transition-all duration-500 ease-out"></span>
               </Link>
             </div>
           </div>
@@ -205,18 +207,18 @@ export default function Home() {
           {/* Two Article Cards */}
           <div className="grid grid-cols-2 gap-4">
             {/* Article Card 3 */}
-            <Link href="/culture/wuxia" className="group border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition flex flex-col">
+            <Link href="/culture/sundial-timekeeping" className="group border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition flex flex-col">
               <div className="relative h-48">
                 <Image
-                  src="/images/index/meihua1.png"
-                  alt="What is Wuxia"
+                  src="/images/Culture & Lore/The Sundial and the Twelve-Shichen Timekeeping System (6).png"
+                  alt="The Sundial and Twelve-Shichen Timekeeping"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="bg-gradient-to-b from-slate-600 to-slate-700 p-4 flex-1 flex flex-col">
-                <h4 className="font-cinzel text-base font-bold mb-2 text-white group-hover:text-gold transition">What is Wuxia?</h4>
-                <p className="font-cinzel text-gray-300 text-sm flex-1">Cultural foundation of martial arts genre.</p>
+                <h4 className="font-cinzel text-base font-bold mb-2 text-white group-hover:text-gold transition">The Sundial & Twelve-Shichen</h4>
+                <p className="font-cinzel text-gray-300 text-sm flex-1">Ancient Chinese timekeeping system.</p>
                 <span className="font-cinzel text-gray-300 text-sm font-medium group-hover:text-gold group-hover:translate-x-1 transition mt-2">Read More →</span>
               </div>
             </Link>
@@ -225,7 +227,7 @@ export default function Home() {
             <Link href="/culture/jianghu" className="group border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition flex flex-col">
               <div className="relative h-48">
                 <Image
-                  src="/images/index/lanhua1.png"
+                  src="/images/index/indexbanner4.png"
                   alt="What is Jianghu"
                   fill
                   className="object-cover"
@@ -369,18 +371,18 @@ export default function Home() {
           {/* Two Article Cards for World */}
           <div className="grid grid-cols-2 gap-4">
             {/* Article Card 5 */}
-            <Link href="/world/meaning-of-wwm" className="group border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition flex flex-col">
+            <Link href="/world/story-of-bawu" className="group border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition flex flex-col">
               <div className="relative h-48">
                 <Image
-                  src="/images/World of WWM/The Meaning of Where Winds Meet 3.jpg"
-                  alt="The Meaning of WWM"
+                  src="/images/World of WWM/The Story of Ba Wu (3).png"
+                  alt="The Story of BaWu"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="bg-gradient-to-b from-slate-600 to-slate-700 p-4 flex-1 flex flex-col">
-                <h4 className="font-cinzel text-base font-bold mb-2 text-white group-hover:text-gold transition">The Meaning of WWM</h4>
-                <p className="font-cinzel text-gray-300 text-sm flex-1">Discover the profound meaning behind '燕云十六声'.</p>
+                <h4 className="font-cinzel text-base font-bold mb-2 text-white group-hover:text-gold transition">The Story of BaWu</h4>
+                <p className="font-cinzel text-gray-300 text-sm flex-1">Priceless but also worthless - the tragic tale of immortality.</p>
                 <span className="font-cinzel text-gray-300 text-sm font-medium group-hover:text-gold group-hover:translate-x-1 transition mt-2">Read More →</span>
               </div>
             </Link>
@@ -389,7 +391,7 @@ export default function Home() {
             <Link href="/culture/storyline" className="group border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition flex flex-col">
               <div className="relative h-48">
                 <Image
-                  src="/images/index/juhua1.png"
+                  src="/images/index/indexbanner5.png"
                   alt="Player Turning into Horse"
                   fill
                   className="object-cover"
@@ -410,7 +412,7 @@ export default function Home() {
             <Link href="/shop/weapons" className="group border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition flex flex-col">
               <div className="relative h-48">
                 <Image
-                  src="/images/index/yupei1.png"
+                  src="/images/index/indexbanner7.png"
                   alt="Traditional Weapons"
                   fill
                   className="object-cover"
@@ -427,7 +429,7 @@ export default function Home() {
             <Link href="/shop/clothing" className="group border border-slate-600 rounded-lg overflow-hidden hover:border-gold transition flex flex-col">
               <div className="relative h-48">
                 <Image
-                  src="/images/index/zhuziqiang1.png"
+                  src="/images/index/indexbanner6.png"
                   alt="Ancient Clothing"
                   fill
                   className="object-cover"
@@ -506,33 +508,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Popular Guides Section */}
+      {/* Popular Posts Section */}
       <section className="relative bg-slate-700 py-16 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-cinzel text-3xl font-bold text-center mb-12 text-white">Popular Guides</h2>
+          <h2 className="font-cinzel text-3xl font-bold text-center mb-12 text-white">Popular Posts</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/gallery/beginner" className="font-cinzel group bg-slate-800 border border-slate-600 rounded-lg p-6 hover:border-gold transition">
-              <h3 className="font-cinzel text-xl font-bold mb-3 text-white group-hover:text-gold transition">Complete Beginner Guide</h3>
+            <Link href="/world/stop-and-halberd" className="font-cinzel group bg-slate-800 border border-slate-600 rounded-lg p-6 hover:border-gold transition">
+              <h3 className="font-cinzel text-xl font-bold mb-3 text-white group-hover:text-gold transition">To Stop the Blade is True Martial Virtue</h3>
               <p className="font-cinzel text-gray-400 mb-4">
-                Everything you need to know to start your journey in Where Winds Meet.
+                Explore the philosophy behind 止戈为武 through Big Zhao's question.
               </p>
-              <span className="font-cinzel text-gray-300 font-medium group-hover:text-gold transition">Read Guide →</span>
+              <span className="font-cinzel text-gray-300 font-medium group-hover:text-gold transition">Read More →</span>
             </Link>
 
-            <Link href="/gallery/combat" className="font-cinzel group bg-slate-800 border border-slate-600 rounded-lg p-6 hover:border-gold transition">
-              <h3 className="font-cinzel text-xl font-bold mb-3 text-white group-hover:text-gold transition">Combat System Explained</h3>
+            <Link href="/world/her-jianghu" className="font-cinzel group bg-slate-800 border border-slate-600 rounded-lg p-6 hover:border-gold transition">
+              <h3 className="font-cinzel text-xl font-bold mb-3 text-white group-hover:text-gold transition">Ruby's Bright Flame</h3>
               <p className="font-cinzel text-gray-400 mb-4">
-                Master the intricate combat mechanics and fighting techniques.
+                Her Jianghu was brief, but her courage burned bright.
               </p>
-              <span className="font-cinzel text-gray-300 font-medium group-hover:text-gold transition">Read Guide →</span>
+              <span className="font-cinzel text-gray-300 font-medium group-hover:text-gold transition">Read More →</span>
             </Link>
 
-            <Link href="/culture/wuxia" className="font-cinzel group bg-slate-800 border border-slate-600 rounded-lg p-6 hover:border-gold transition">
-              <h3 className="font-cinzel text-xl font-bold mb-3 text-white group-hover:text-gold transition">What is Wuxia?</h3>
+            <Link href="/world/meaning-of-wwm" className="font-cinzel group bg-slate-800 border border-slate-600 rounded-lg p-6 hover:border-gold transition">
+              <h3 className="font-cinzel text-xl font-bold mb-3 text-white group-hover:text-gold transition">The Meaning of WWM</h3>
               <p className="font-cinzel text-gray-400 mb-4">
-                Understand the cultural foundation behind this epic martial arts genre.
+                Discover the profound meaning behind '燕云十六声'.
               </p>
-              <span className="font-cinzel text-gray-300 font-medium group-hover:text-gold group-hover:translate-x-1 transition">Learn More →</span>
+              <span className="font-cinzel text-gray-300 font-medium group-hover:text-gold group-hover:translate-x-1 transition">Read More →</span>
             </Link>
           </div>
         </div>
