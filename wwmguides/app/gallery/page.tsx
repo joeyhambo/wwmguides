@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 // Define image structure with category
@@ -42,7 +42,7 @@ const galleryImages: GalleryImage[] = [
 
 const categories = ["All Pictures", "Profile", "Landscapes", "Portraits", "Moments"];
 
-export default function GalleryPage() {
+function GalleryContent() {
   const searchParams = useSearchParams();
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [selectedCategory, setSelectedCategory] = useState("All Pictures");
@@ -184,5 +184,20 @@ export default function GalleryPage() {
         </div>
       )}
     </div>
+  );
+}
+
+export default function GalleryPage() {
+  return (
+    <Suspense fallback={
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="text-center mb-8">
+          <h1 className="font-cinzel text-4xl md:text-5xl font-bold mb-4 text-white">Fun Moments</h1>
+          <p className="text-xl text-gray-300">Loading gallery...</p>
+        </div>
+      </div>
+    }>
+      <GalleryContent />
+    </Suspense>
   );
 }
